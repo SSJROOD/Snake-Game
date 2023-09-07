@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Colors.h" />
+    <ClInclude Include="Food.h" />
     <ClInclude Include="Grid.h" />
     <ClInclude Include="Snake.h" />
   </ItemGroup>

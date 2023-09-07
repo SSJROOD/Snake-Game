@@ -10,7 +10,7 @@ public:
         {
             int xcoor = body.x;
             int ycoor = body.y;
-            DrawRectangle(xcoor * grid.cellSize, ycoor * grid.cellSize, grid.cellSize, grid.cellSize, color.darkGreen);
+            DrawRectangle(xcoor * grid.cellSize, ycoor * grid.cellSize, grid.cellSize, grid.cellSize, color.GetdarkGreen());
         }
     }
 private:
