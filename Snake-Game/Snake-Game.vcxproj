@@ -129,6 +129,14 @@
   <ItemGroup>
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="apple2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Colors.h" />
+    <ClInclude Include="Grid.h" />
+    <ClInclude Include="Snake.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
