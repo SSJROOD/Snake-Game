@@ -1,20 +1,29 @@
+#ifndef SNAKE_H
+#define SNAKE_H
+
 #include "Colors.h"
 #include "Grid.h"
 #include <deque>
+#include "raymath.h"
 
 class Snake {
 public:
-    void Draw()
-    {
-        for (auto& body : snake)
-        {
-            int xcoor = body.x;
-            int ycoor = body.y;
-            DrawRectangle(xcoor * grid.cellSize, ycoor * grid.cellSize, grid.cellSize, grid.cellSize, color.GetdarkGreen());
-        }
-    }
+    void reset();
+    Snake();
+    void Draw();
+    void update();
+    void setDirection(float x, float y);
+    void setaddSegment(bool);
+    float GetXcoor() const;
+    float GetYcoor() const;
+    const std::deque<Vector2>& getBody() const;
+
 private:
     Grid grid;
     Colors color;
-    std::deque<Vector2> snake = { Vector2{6,9},Vector2{5,9} };
+    std::deque<Vector2> Body;
+    Vector2 direction;
+    bool addSegment;
 };
+
+#endif
